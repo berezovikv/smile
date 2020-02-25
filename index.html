@@ -17,7 +17,7 @@
         button {
             width: 70px;
             border-radius: 5px;
-            background: #fc0;
+            background: red;
             text-align: center;
             user-select: none;
             outline: none;
@@ -84,7 +84,9 @@
         let controll;
 
         function start() { 
+            clearInterval(controll);
             controll = setInterval(viewImages, 500);
+            
         };
         function stop() { 
             clearInterval(controll);
